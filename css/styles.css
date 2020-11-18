@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    background-color: brown;
+    position: fixed;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+#banner{
+    width: 100%;
+    height: 1100px;
+    background-color: darkgreen;
+    
+}
+
+#noticias-cont{
+    width: 100%;
+    height: 1150px;
+    background-color: darkorchid;
+  
+}
+
+#semana-cont{
+    width: 100%;
+    height: 2200px;
+    background-color: rgb(255, 129, 196);
+    
+}
+
+#media-cont{
+    width: 100%;
+    height: 1400px;
+    background-color: gold;
+    
+}
+
+#galeria-cont{
+    width: 100%;
+    height: 2400px;
+    background-color: lightskyblue;
+}
+
+#resumen-cont{
+    width: 100%;
+    height: 1460px;
+    background-color: lime;
+}
+
+#opinion-cont{
+    width: 100%;
+    height: 1000px;
+    background-color: mediumpurple;
+}
+
+#contacto-cont{
+    width: 100%;
+    height: 1320px;
+    background-color: orange;
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+}
