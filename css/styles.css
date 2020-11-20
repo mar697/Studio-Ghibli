@@ -39,15 +39,233 @@ body{
 
 #media-cont{
     width: 100%;
-    height: 1400px;
-    background-color: gold;
-    
+    height: 600px;
+
+
 }
+#titulo{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cuadrado{
+    width: 45%;
+    height: 55%;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    margin-left: 26%;
+
+}
+ 
+
+#cuadrado-contenedor{
+    width: 40%;
+    height: 80%;
+    align-content: center;
+    margin-left: 7%;
+    margin-top: 5% ;  
+}
+#foto{
+    
+
+    width: 484px;
+    height: 512px;
+    left: 330px;
+    top: 5099px;
+}
+#playlist{
+    font-family: 'Red Hat Text', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+#subtitulo{
+    font-size: 25px;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 42%;
+    margin-top: 3%;
+    
+  }
+  
+  
+  .btn:hover {background: rgba(255, 255, 255, 0.74);}
+  .spotify {color: orange;}
+
+
 
 #galeria-cont{
     width: 100%;
     height: 2400px;
     background-color: lightskyblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 30%;
+    justify-content: center;
+   }
+
+
+#cuadrado1, #cuadrado2, #cuadrado3, #cuadrado4, #cuadrado1b, #cuadrado2b, #cuadrado3b, #cuadrado4b, #cuadrado1c, #cuadrado2c, #cuadrado3c, #cuadrado4c{
+    width: 280px;
+    height: 280px;
+    background-color: lightgreen;
+    
+    
+    
+}
+#cuadrado1{
+    background-image: url(https://i.pinimg.com/564x/6e/73/0c/6e730cd9c963418e68f0725790b4b819.jpg);  
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado2{
+    background-image: url(https://i.pinimg.com/564x/e3/22/68/e3226815da992b74749c4af7b36501dd.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado3{
+    background-image: url(https://i.pinimg.com/564x/a9/85/e1/a985e108db6fa39e1d57ef800e34bb70.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado4{
+    background-image: url(https://i.pinimg.com/564x/31/51/f1/3151f154393b9bbc00b427427c296c36.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 280px;  
+}
+
+#cuadrado1b{
+    background-image: url(https://i.pinimg.com/564x/1a/82/9b/1a829b4fc6d3d9eb1a53f1d098be9022.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado2b{
+    background-image: url(https://i.pinimg.com/564x/a6/3d/f4/a63df4934c023cb31018a0c0a7fa1391.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado3b{
+    background-image: url(https://i.pinimg.com/564x/4e/3e/37/4e3e37aa50cf83019e723551574d0280.jpg); 
+    background-position: center;
+    background-size: auto;  
+}
+
+#cuadrado4b{
+    background-image: url(https://i.pinimg.com/564x/19/d7/7a/19d77ade0b8dc20ec46dd063a577b93d.jpg);  
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado1c{
+    background-image: url(https://i.pinimg.com/564x/2d/a5/62/2da5620ed12d0ed2fa2e8bc587a13bd8.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado2c{
+    background-image: url(https://i.pinimg.com/564x/27/f9/5f/27f95f8eaac03aae2ca4999d245a9c1f.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado3c{
+    background-image: url(https://i.pinimg.com/564x/c8/8c/74/c88c74cca65d96c5f5713ee891cd7529.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+#cuadrado4c{
+    background-image: url(https://i.pinimg.com/564x/ee/8d/b2/ee8db2728fcc1089fb3dec568e8bc6ed.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+
+.flip-card {
+    
+    background-color: transparent;
+    width: 280px;
+    height: 280px;
+    
+    perspective: 1000px; 
+  }
+  
+ 
+  .flip-card-inner {
+    
+    width: 280px;
+    height: 280px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+
+  .flip-card-back {
+    background-color: rgb(70, 116, 161);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: 'Red Hat Text', sans-serif;
+    align-self: center;
+
+    }
+
+
+#titulo{
+    margin-top: 10%;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
 
