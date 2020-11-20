@@ -1,42 +1,299 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
 
 nav{
     height: 90px;
     width: 100%;
     display: flex;
-    background-color: brown;
+    justify-content: flex-end ;
+    align-content: center;
+    background-image: linear-gradient(white,white,white,white, transparent);
     position: fixed;
 }
+.topnav{
+    display: flex;
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20pt;
+    line-height: 48px;
+    color: black;
+}
+.barra-cont{
+    width: 750px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.topnav a.active {
+  color: black;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  
+}
+
 body{
     width: 100%;
     height: 100%;
     background-color: cornflowerblue;
+    background-image: linear-gradient(skyblue,cornflowerblue,#1E4365);
 }
 
 #banner{
     width: 100%;
     height: 1100px;
-    background-color: darkgreen;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-cont{
+    height: 370px;
+    width: 1200px;
 }
 
 #noticias-cont{
     width: 100%;
     height: 1150px;
-    background-color: darkorchid;
-  
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;  
 }
+.noticia1{    
+    width: 1450px;
+    height: 402px;
+    margin-bottom: 50px;
+    top: 1245px;
 
+    background: rgb(216, 140, 140);
+}
+.titulo-noticia1{
+    font-family: Red Hat Text;
+    font-style: italic;
+    color: white;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.not1-cont{
+    height: 330px;
+    width: 1450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cuerpo-noticia1{
+    width: 850px;
+    height: 270px;
+
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25pt;
+    color: #000000;
+}
+.img-noticia1{
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+.noticia2{
+    width: 1450px;
+    height: 450px;
+    left: 470px;
+    top: 1729px;
+    background: rgb(216, 140, 140);
+}
+.titulo-noticia2{
+    font-family: Red Hat Text;
+    font-style: italic;
+    color: white;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.not2-cont{
+    height: 330px;
+    width: 1450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cuerpo-noticia2{
+    width: 850px;
+    height: 270px;
+
+    font-family: Red Hat Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25pt;
+    color: #000000;
+}
+.img-noticia2{
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
 #semana-cont{
     width: 100%;
     height: 2200px;
-    background-color: rgb(255, 129, 196);
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
+#sema-cont{
+    width: 1452px;
+    height: 788px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#titulo-sema{
+    width: 1446px;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Red Hat Text;
+    color: black;
+    font-weight: 500;
+    font-size: 40pt;
+    background-color: rgb(204, 250, 247)
+}
+#cuerpo-semana-cont{
+    width: 1448px;
+    height: 666px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(204, 250, 247);
+}
+#titulo-pelicula{
+    width: 686px;
+    height: 75px;
+    font-family: Red Hat Text;
+    font-weight: 500;
+    color: black;
+    font-size: 32pt;
 
+}
+#cuerpo-peli-cont{
+    width: 704px;
+    height: 538px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#cuerpo-peli{
+    width: 704px;
+    height: 420px;
+    font-family: Red Hat Text;
+    color: black;
+    font-size: 23pt;
+}
+#img-ponyo{
+    width: 635px;
+    height: 536px;
+    background-image: url(/img/inicio_mariapaula/ponyo-y-el-secreto-de-la-sirenita-996x560.jpg);
+    background-size: auto;
+    background-position: center;
+}
+#historia-cont{
+    width: 1810px;
+    height: 1162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#titulo-histo{
+    font-family: Red Hat Text;
+    font-weight: 500;
+    color: black;
+    font-size: 32pt;
+    width: 1810px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 250, 247);
+}
+#cuerpo-historia{
+    width: 1810px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 250, 247);
+}
+#texto-historia{
+    font-family: Red Hat Text;
+    color: black;
+    font-size: 19pt;
+    width: 1700px;
+    height: 1000px;
+    margin-top: 50px;
+}
 #media-cont{
     width: 100%;
     height: 600px;
